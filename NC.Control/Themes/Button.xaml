@@ -1,0 +1,77 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:control="clr-namespace:NC.Control"
+                    xmlns:converters="clr-namespace:NC.Control.Converters"
+                    xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;Component/Themes/BrushResources.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;Component/Themes/Icons.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;Component/Themes/Shadows.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="DefaultButtonStyle"
+           TargetType="Button">
+        <Setter Property="HorizontalContentAlignment"
+                Value="Center" />
+        <Setter Property="VerticalContentAlignment"
+                Value="Center" />
+        <Setter Property="FontSize"
+                Value="12" />
+        <Setter Property="Foreground"
+                Value="#80FFFFFF" />
+        <Setter Property="FocusVisualStyle"
+                Value="{x:Null}" />
+        <Setter Property="Cursor"
+                Value="Hand" />
+        <Setter Property="UseLayoutRounding"
+                Value="False" />
+        <Setter Property="control:ShadowAssist.ShadowDepth"
+                Value="Depth3" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="PART_Border"
+                            Padding="{TemplateBinding Padding}"
+                            Background="{StaticResource ImageBtnBackNormalBrush}"
+                            CornerRadius="6"
+                            Effect="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(control:ShadowAssist.ShadowDepth), Converter={x:Static converters:ShadowConverter.Instance}}">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver"
+                                 Value="True">
+                            <Trigger.Setters>
+                                <Setter TargetName="PART_Border"
+                                        Property="Background"
+                                        Value="{StaticResource ImageBtnBackHoverBrush}" />
+                            </Trigger.Setters>
+                        </Trigger>
+                        <Trigger Property="IsPressed"
+                                 Value="True">
+                            <Trigger.Setters>
+                                <Setter TargetName="PART_Border"
+                                        Property="Background"
+                                        Value="{StaticResource ImageBtnBackPressedBrush}" />
+                            </Trigger.Setters>
+                        </Trigger>
+                        <Trigger Property="IsEnabled"
+                                 Value="false">
+                            <Trigger.Setters>
+                                <Setter TargetName="PART_Border"
+                                        Property="Opacity"
+                                        Value="0.7" />
+                            </Trigger.Setters>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--  默认样式  -->
+    <Style BasedOn="{StaticResource DefaultButtonStyle}"
+           TargetType="Button" />
+</ResourceDictionary>

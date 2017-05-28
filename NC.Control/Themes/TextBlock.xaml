@@ -1,0 +1,197 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--  11号白色字体  -->
+    <Style x:Key="Font11White"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="11" />
+        <Setter Property="Foreground"
+                Value="White" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  12号白色字体  -->
+    <Style x:Key="Font12White"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="12" />
+        <Setter Property="Foreground"
+                Value="White" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  12号灰色字体  -->
+    <Style x:Key="Font12Gray"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="12" />
+        <Setter Property="Foreground"
+                Value="#8A8A8A" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  14号白色字体  -->
+    <Style x:Key="Font14White"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="14" />
+        <Setter Property="Foreground"
+                Value="White" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  14号灰色字体  -->
+    <Style x:Key="Font14Gray"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="14" />
+        <Setter Property="Foreground"
+                Value="#8A8A8A" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  16号白色字体  -->
+    <Style x:Key="Font16White"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="16" />
+        <Setter Property="Foreground"
+                Value="White" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  16号浅灰色字体  -->
+    <Style x:Key="Font16LightGray"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="16" />
+        <Setter Property="Foreground"
+                Value="#FFC7C7C7" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+    
+        <!--  16号灰色字体  -->
+    <Style x:Key="Font16Gray"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="16" />
+        <Setter Property="Foreground"
+                Value="#8A8A8A" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  18号白色字体  -->
+    <Style x:Key="Font18White"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="18" />
+        <Setter Property="Foreground"
+                Value="White" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  18号蓝色字体  -->
+    <Style x:Key="Font18Blue"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="18" />
+        <Setter Property="Foreground"
+                Value="#3492FF" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  20号白色字体  -->
+    <Style x:Key="Font20White"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="20" />
+        <Setter Property="Foreground"
+                Value="White" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+
+    <!--  20号白色字体带Tooltip  -->
+    <Style x:Key="Font20WhiteWithTooltip"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="20" />
+        <Setter Property="Foreground"
+                Value="White" />
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+        <Setter Property="TextTrimming"
+                Value="WordEllipsis" />
+        <Setter Property="ToolTip"
+                Value="{Binding Text, RelativeSource={RelativeSource Mode=Self}}" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+    </Style>
+
+    <!--  24号字体  -->
+    <Style x:Key="Font24"
+           TargetType="{x:Type TextBlock}">
+        <Setter Property="FontFamily"
+                Value="微软雅黑" />
+        <Setter Property="FontSize"
+                Value="24" />
+        <Setter Property="Foreground"
+                Value="White" />
+    </Style>
+</ResourceDictionary>

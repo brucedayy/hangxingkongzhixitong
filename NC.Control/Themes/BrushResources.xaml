@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:po="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+    <!--  Card start  -->
+    <SolidColorBrush x:Key="CardBackground"
+                     Color="#FF424242"
+                     po:Freeze="True"
+                     Opacity="0.7" />
+    <!--  Card end  -->
+
+    <!--  ImageButton start  -->
+    <LinearGradientBrush x:Key="ImageBtnBackNormalBrush"
+                         StartPoint="0.5,0"
+                         EndPoint="0.5,1"
+                         po:Freeze="True"
+                         x:Shared="True">
+        <GradientStop Offset="0"
+                      Color="#FF7C7A7A" />
+        <GradientStop Offset="0.02"
+                      Color="#FF595959" />
+        <GradientStop Offset="0.03"
+                      Color="#FF3C3C3C" />
+        <GradientStop Offset="1"
+                      Color="#FF1A1A1A" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ImageBtnBackHoverBrush"
+                         StartPoint="0.5,0"
+                         EndPoint="0.5,1"
+                         po:Freeze="True"
+                         x:Shared="True">
+        <GradientStop Offset="0"
+                      Color="#59637A" />
+        <GradientStop Offset="0.02"
+                      Color="#4B5366" />
+        <GradientStop Offset="0.03"
+                      Color="#41485A" />
+        <GradientStop Offset="1"
+                      Color="#242933" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ImageBtnBackPressedBrush"
+                         StartPoint="0.5,0"
+                         EndPoint="0.5,1"
+                         po:Freeze="True"
+                         x:Shared="True">
+        <GradientStop Offset="0"
+                      Color="#FF595959" />
+        <GradientStop Offset="0.02"
+                      Color="#FF3C3C3C" />
+        <GradientStop Offset="0.03"
+                      Color="#FF1A1A1A" />
+        <GradientStop Offset="1"
+                      Color="#FF181919" />
+    </LinearGradientBrush>
+    <!--  ImageButton end  -->
+
+
+    <!--ColorZone start-->
+    <SolidColorBrush x:Key="ColorZoneBackground"
+                     Color="#FF303030"
+                     po:Freeze="True" />
+    <SolidColorBrush x:Key="ColorZoneForeground"
+                     Color="#DDFFFFFF"
+                     po:Freeze="True" />
+    <!--ColorZone end-->
+</ResourceDictionary>

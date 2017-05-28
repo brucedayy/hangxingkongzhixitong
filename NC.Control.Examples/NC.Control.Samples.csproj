@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{163E4060-3BFC-4380-BECD-879685F6FD69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NC.Control.Samples</RootNamespace>
+    <AssemblyName>NC.Control.Samples</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Encx.Wpf">
+      <HintPath>..\..\..\..\..\Program Files (x86)\ENCX SDK\Samples\DotNET\Encx.Wpf\Encx.Wpf\bin\Release\Encx.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.ENCX">
+      <HintPath>..\..\..\..\..\Program Files (x86)\ENCX SDK\Samples\DotNET\Encx.Wpf\Encx.Wpf\Interop.ENCX.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\mainheader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\mainnav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\mainstatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav06.png" />
+    <Resource Include="Icon\nav07.png" />
+    <Resource Include="Icon\nav08.png" />
+    <Resource Include="Icon\nav09.png" />
+    <Resource Include="Icon\nav10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav02_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav03_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav03_01_01.png" />
+    <Resource Include="Icon\nav03_01_02.png" />
+    <Resource Include="Icon\nav03_01_03.png" />
+    <Resource Include="Icon\nav_03_01_04.png" />
+    <Resource Include="Icon\nav_03_01_05.png" />
+    <Resource Include="Icon\nav_03_01_06.png" />
+    <Resource Include="Icon\nav_03_01_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav04_01.png" />
+    <Resource Include="Icon\nav04_01_btnCancel.png" />
+    <Resource Include="Icon\nav04_01_btnSubmit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\encxbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NC.Control\NC.Control.csproj">
+      <Project>{72c16b94-68e3-4812-b3a3-bd297f0ff347}</Project>
+      <Name>NC.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NC.Panel\NC.Panel.csproj">
+      <Project>{c5ad0386-650f-44ba-b9b4-9ca8e14c41b2}</Project>
+      <Name>NC.Panel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav05_01.png" />
+    <Resource Include="Icon\nav05_01_01.png" />
+    <Resource Include="Icon\nav05_01_02.png" />
+    <Resource Include="Icon\nav05_01_03.png" />
+    <Resource Include="Icon\nav05_01_04.png" />
+    <Resource Include="Icon\nav05_01_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\nav05_02.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

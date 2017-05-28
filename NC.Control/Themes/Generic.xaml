@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:iconPacks="clr-namespace:NC.Control.IconPacks">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/BrushResources.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/Icons.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/MetroIcon.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/PackIconMetro.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/Shadows.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/ScrollBar.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/ScrollViewer.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/TextBlock.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/Card.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/GroupBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/Button.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/NC.Control;component/Themes/ColorZone.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="iconPacks:PackIconMetro"
+           BasedOn="{StaticResource Styles.PackIconMetro}" />
+</ResourceDictionary>
